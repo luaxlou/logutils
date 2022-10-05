@@ -5,7 +5,7 @@ import (
 	"log"
 )
 
-//打印更漂亮的对象
+// 打印更漂亮的对象
 func PrintObj(obj interface{}) {
 
 	log.Println(FormatJSON(obj))
