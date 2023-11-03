@@ -47,7 +47,7 @@ func PrintCaller() {
 }
 
 func GetCallerInfo() string {
-	_, file, line, _ := runtime.Caller(1)
+	_, file, line, _ := runtime.Caller(2)
 	return fmt.Sprintf("%s:%d", file, line)
 
 }
