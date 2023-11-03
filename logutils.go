@@ -23,6 +23,12 @@ func PrintObjWithMsg(obj interface{}, msg string) {
 
 func PrintError(err error, extraMsg ...string) {
 
+	PrintErrorMsg(err.Error(), extraMsg...)
+
+}
+
+func PrintErrorMsg(errMsg string, extraMsg ...string) {
+
 	msg := GetCallerInfo() + "\n"
 
 	if len(extraMsg) > 0 {

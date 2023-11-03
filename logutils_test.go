@@ -17,4 +17,5 @@ func TestPrint(t *testing.T) {
 	PrintObjWithMsg(x{"xxx"}, "hi")
 
 	PrintError(errors.New("I am creazy!!"), "haha")
+	PrintErrorMsg("I am creazy too!!", "haha")
 }
