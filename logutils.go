@@ -35,7 +35,7 @@ func PrintErrorMsg(errMsg string, extraMsg ...string) {
 		msg += strings.Join(extraMsg, "") + "\n"
 	}
 
-	msg += err.Error()
+	msg += errMsg
 
 	log.Println(msg)
 
